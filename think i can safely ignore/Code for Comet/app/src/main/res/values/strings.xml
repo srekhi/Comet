@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Comet</string>
+
+    <string name="title">Comet</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1612057252371169</string>
+    <string name="title_activity_home_page2">HomePage2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sign_up_page">SignUpPage</string>
+    <string name="title_activity_make_commit">MakeCommit</string>
+    <string name="title_activity_make_commit2">MakeCommit2</string>
+    <string name="title_activity_why_ref">WhyRef</string>
+
+    <string-array name="MakeCommitOptions">
+        <item>week(s)</item>
+        <item>day(s)</item>
+        <item>hour(s)</item>
+        <item>minute(s)</item>
+    </string-array>
+
+    <string name="title_activity_set_the_stakes">SetTheStakes</string>
+    <string name="title_activity_commit__summary">Commit_Summary</string>
+    <string name="title_activity_payment__info">Payment_Info</string>
+    <string name="title_activity_log_in_form">Log_in_form</string>
+    <string name="title_activity_profile__page">Profile_Page</string>
+</resources>

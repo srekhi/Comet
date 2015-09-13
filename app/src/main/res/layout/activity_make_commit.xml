@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.moneyspeaks.MakeCommit">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Comet! Let&apos;s make a commitment"
+        android:id="@+id/makeAGoal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here are some examples:"
+        android:id="@+id/textView3"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/makeAGoal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m going to study: 3 hours every day"
+        android:id="@+id/commit1"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Commit1"
+        android:id="@+id/check1"
+        android:layout_above="@+id/commit2"
+        android:layout_alignRight="@+id/commit1"
+        android:layout_alignEnd="@+id/commit1"
+        android:onClick="commitThis"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m going to exercise: 4 days every week"
+        android:id="@+id/commit2"
+        android:layout_marginTop="92dp"
+        android:layout_below="@+id/commit1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CopyCommit2"
+        android:id="@+id/check2"
+        android:layout_above="@+id/Makeyourownbtn"
+        android:layout_toRightOf="@+id/commit2"
+        android:layout_toEndOf="@+id/commit2"
+        android:onClick="commitThis"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make your own!"
+        android:id="@+id/Makeyourownbtn"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="96dp"
+        android:onClick="passto2"
+        android:layout_below="@+id/commit2"
+        android:layout_alignLeft="@+id/makeAGoal"
+        android:layout_alignStart="@+id/makeAGoal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Info"
+        android:id="@+id/paymentInfo"
+        android:layout_alignTop="@+id/Makeyourownbtn"
+        android:layout_alignRight="@+id/check2"
+        android:layout_alignEnd="@+id/check2"
+        android:onClick="onBraintreeSubmit"/>
+
+
+</RelativeLayout>

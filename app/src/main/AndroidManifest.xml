@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.moneyspeaks" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:name=".HashKey"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name=".MoneySpeaks"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".HomePage2"
+            android:label="@string/title_activity_home_page2" >
+        </activity>
+        <activity
+            android:name=".SignUpPage"
+            android:label="@string/title_activity_sign_up_page" >
+        </activity>
+        <activity
+            android:name=".MakeCommit"
+            android:label="@string/title_activity_make_commit" >
+        </activity>
+        <activity
+            android:name=".MakeCommit2"
+            android:label="@string/title_activity_make_commit2" >
+        </activity>
+        <activity
+            android:name=".RefPage1"
+            android:label="RefPage1" >
+        </activity>
+        <activity
+            android:name=".WhyRef"
+            android:label="@string/title_activity_why_ref" >
+        </activity>
+        <activity
+            android:name=".SetTheStakes"
+            android:label="@string/title_activity_set_the_stakes" >
+        </activity>
+        <activity
+            android:name=".Commit_Summary"
+            android:label="@string/title_activity_commit__summary" >
+        </activity>
+        <activity
+            android:name=".Payment_Info"
+            android:label="@string/title_activity_payment__info" >
+        </activity>
+        <activity
+            android:name=".Log_in_form"
+            android:label="@string/title_activity_log_in_form" >
+        </activity>
+        <activity
+            android:name=".Profile_Page"
+            android:label="@string/title_activity_profile__page" >
+        </activity>
+        <activity
+            android:name=".Checkout_Activity"
+            android:label="@string/title_activity_checkout_" >
+        </activity>
+
+        <receiver android:name="com.example.android.moneyspeaks.Alarm">
+
+
+        <intent-filter>
+            <action android:name="com.example.android.moneyspeaks.BROADCAST" />
+        </intent-filter>
+    </receiver>
+
+    </application>
+
+</manifest>

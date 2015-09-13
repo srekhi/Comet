@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commitment repost"
+        android:textSize="15sp"
+        android:textColor="@color/bt_black"
+        android:id="@+id/commitmentSentence"
+        android:layout_alignBottom="@+id/enterCodeET"
+        android:layout_alignParentTop="true" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Enter Code"
+        android:id="@+id/enterCodeET"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/textView23"
+        android:layout_toLeftOf="@+id/submitCode"
+        android:layout_toStartOf="@+id/submitCode" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/submitTheCode"
+        android:layout_alignTop="@+id/enterCodeET"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Time left:"
+        android:id="@+id/textView23"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/codeTimer"
+        android:layout_toStartOf="@+id/codeTimer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/codeTimer"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

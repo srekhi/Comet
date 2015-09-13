@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.moneyspeaks.Log_in_form">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Log In"
+        android:id="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameET"
+        android:layout_marginTop="79dp"
+        android:text="username"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordET"
+        android:layout_below="@+id/usernameET"
+        android:layout_toLeftOf="@+id/textView19"
+        android:layout_toStartOf="@+id/textView19"
+        android:text="password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="----or----"
+        android:id="@+id/textView20"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log in with fb/twitter"
+        android:id="@+id/button5"
+        android:layout_below="@+id/textView20"
+        android:layout_alignRight="@+id/textView20"
+        android:layout_alignEnd="@+id/textView20"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginbutton"
+        android:layout_below="@+id/passwordET"
+        android:layout_alignRight="@+id/passwordET"
+        android:layout_alignEnd="@+id/passwordET" />
+</RelativeLayout>

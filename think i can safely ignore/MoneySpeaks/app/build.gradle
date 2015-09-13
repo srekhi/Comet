@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    repositories {
+        mavenCentral()
+    }
+    defaultConfig {
+        applicationId "com.example.android.moneyspeaks"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.braintreepayments.api:braintree:1.+'
+    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
+    compile 'com.braintreepayments.gateway:braintree-java:2.45.0'
+    compile 'com.loopj.android:android-async-http:1.4.5'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.jayway.jsonpath:json-path:0.9.1'
+}

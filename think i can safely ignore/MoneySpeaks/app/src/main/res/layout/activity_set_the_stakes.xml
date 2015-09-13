@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.moneyspeaks.SetTheStakes">
+
+    <TextView android:text="Set the Stakes!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="4"
+        android:id="@+id/cost"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:text="10"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/plus"
+        android:layout_below="@+id/cost"
+        android:layout_toRightOf="@+id/minus"
+        android:layout_toEndOf="@+id/minus"
+        android:onClick="subtract"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/minus"
+        android:layout_alignTop="@+id/plus"
+        android:layout_alignLeft="@+id/cost"
+        android:layout_alignStart="@+id/cost"
+        android:onClick="add"/>
+
+
+</RelativeLayout>

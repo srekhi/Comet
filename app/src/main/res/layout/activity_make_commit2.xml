@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.moneyspeaks.MakeCommit2"
+
+    android:id="@+id/makecommit2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m going to"
+        android:id="@+id/imGoingTo"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goalname"
+        android:hint="(ex: study)"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/imGoingTo"
+        android:layout_alignLeft="@+id/imGoingTo"
+        android:layout_alignStart="@+id/imGoingTo" />
+
+    <Spinner
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="73dp"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="for"
+        android:id="@+id/textView9"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/goalname"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/number"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_toStartOf="@+id/goalname"
+        android:hint="(ex: 3)" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the Stakes"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:onClick="setStakes"
+        android:layout_alignRight="@+id/imGoingTo"
+        android:layout_alignEnd="@+id/imGoingTo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="every"
+        android:id="@+id/every"
+        android:layout_alignTop="@+id/spinner2"
+        android:layout_toLeftOf="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Alarm Manager"
+        android:id="@+id/testAlarm"
+        android:onClick="alarmTest"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignLeft="@+id/every"
+        android:layout_alignStart="@+id/every" />
+
+</RelativeLayout>

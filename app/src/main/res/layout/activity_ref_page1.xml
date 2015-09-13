@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.moneyspeaks.RefPage1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Before we get started....."
+        android:id="@+id/title"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a referee to monitor your progress"
+        android:id="@+id/pickaref"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Referee&apos;s Name"
+        android:ems="10"
+        android:id="@+id/refName"
+        android:layout_below="@+id/pickaref"
+        android:layout_alignRight="@+id/pickaref"
+        android:layout_alignEnd="@+id/pickaref" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/cellNumber"
+        android:layout_below="@+id/refName"
+        android:layout_alignLeft="@+id/refName"
+        android:layout_alignStart="@+id/refName"
+        android:hint="Cell phone number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Why do I need a ref?"
+        android:id="@+id/whyref"
+        android:onClick="refswitch"
+        android:layout_below="@+id/cellNumber"
+        android:layout_alignLeft="@+id/cellNumber"
+        android:layout_alignStart="@+id/cellNumber" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready to get going!"
+        android:id="@+id/readyBtn"
+        android:onClick="makeTheCommit"
+        android:layout_below="@+id/whyref"
+        android:layout_alignLeft="@+id/whyref"
+        android:layout_alignStart="@+id/whyref"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="85dp" />
+
+</RelativeLayout>
