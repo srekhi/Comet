@@ -1,5 +1,7 @@
 # Comet
 
+(Note Stripe and Parse secret keys have been removed... going to figure out how to have my app build successfully off of Github at a later date).
+
 Comet is an Android app to keep people focused on their commitments. Often, I've found myself mentally commiting to doing something
 (e.g running three times a week, or coding 2 hours a day) only to find myself wasting away in front of Netflix. With Comet, I've sought 
 to fix this problem for myself (and hopefully many others too).
