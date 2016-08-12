@@ -20,4 +20,4 @@ If the user doesn't enter the code, they will **lose the money**. Every week, th
 I still need to put some finishing touches on the backend and make the UI pretty. I've begun experimenting with various color schemes but haven't
 quite set on one look.
 
-#### Note: The entire commit history wasn't added to this repo, but all code is up to date.
+#### Note: The entire commit history wasn't added to this repository, but all code is up to date.
